@@ -9,3 +9,7 @@ def create_phone_number(n):
     str3 = ''.join(str(e) for e in n[6:])
     x = '('+ str1 + ')'+ ' ' + str2 + '-' + str3
     return x
+
+#best solution
+def create_phone_number(n):
+    return "({}{}{}) {}{}{}-{}{}{}{}".format(*n)
